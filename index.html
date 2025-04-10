@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const recordId = params.get('record_id');
+        if (recordId) {
+            window.top.location.href = `https://hook.eu2.make.com/auu9kjdyfsvsm2v2xyv3xx2g4n57dyyy?RecordID=${recordId}`;
+        } else {
+            document.body.innerHTML = "<p>Error: Missing record ID.</p>";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting... If you are not redirected, <a href="https://hook.eu2.make.com/">click here</a>.</p>
+</body>
+</html>
